@@ -1,3 +1,5 @@
+<?php $htmlString= 'testing'; ?>
+
 <!DOCTYPE html>
 
 <head> 
@@ -9,15 +11,44 @@
 
 <div class="app" id="app_main">
 
-    <p> <input id="i_6h" class="inp" type="text" value="1"> </p>
-    <p><button id="b_cubicNormal" class="button" title="[uvw]⊥(hkl)" type="button"> <b>&dArr;</b> </button> </p>
+    <p> <input id="link" class="inp" type="text" value="https://www.youtube.com/watch?v=3GwjfUFyY6M"> </p>
+    
+    <fieldset id="download method">
+        <legend>Download Method</legend>
+        
+        <div class="fieldgroup">
+            <input type="radio" name="download_method" value="Video/mp4">
+            <label for= "video">Video/mp4</label>
+        </div>
+        
+        <div class="fieldgroup">
+            <input type="radio" name="download_method" value="Video/mp4">
+            <label for= "audio">Audio/mp3</label>
+        </div>
+    </fieldset>
+        <fieldset id="playlist boolean">
+        <legend>Playlist?</legend>
+        
+        <div class="fieldgroup">
+            <input type="radio" name="playlist_answer" value="yes">
+            <label for= "Yes">Yes</label>
+        </div>
+        
+        <div class="fieldgroup">
+            <input type="radio" name="playlist_answer" value="no">
+            <label for= "no">No</label>
+        </div>
+    </fieldset>
 
+    <button id="dl" class="button" title="download video/audio" type="button"> <b>&dArr;</b> </button>
+
+    <p id="output"> Here is some output</p>
 </div>
 
 </body>
 
 <script>
-
+src = "web_ui.js"
 </script>
 
 </html>

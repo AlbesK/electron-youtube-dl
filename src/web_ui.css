@@ -41,4 +41,15 @@
   cursor:default;
 }
 
+.fieldset{
+  background-color:white; 
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.fieldgroup{
+  float: left;
+  width: auto;
+  margin-left: 3em;
+}
  
