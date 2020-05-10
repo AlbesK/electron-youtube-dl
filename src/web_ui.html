@@ -1,5 +1,4 @@
 <?php $htmlString= 'testing'; ?>
-
 <!DOCTYPE html>
 
 <head> 
@@ -17,38 +16,37 @@
         <legend>Download Method</legend>
         
         <div class="fieldgroup">
-            <input type="radio" name="download_method" value="Video/mp4">
-            <label for= "video">Video/mp4</label>
+            <input type="radio" name="download_method" value="mp4">
+            <label>Video/mp4</label>
         </div>
         
         <div class="fieldgroup">
-            <input type="radio" name="download_method" value="Video/mp4">
-            <label for= "audio">Audio/mp3</label>
+            <input type="radio" name="download_method" value="mp3">
+            <label>Audio/mp3</label>
         </div>
     </fieldset>
-        <fieldset id="playlist boolean">
+    
+    <fieldset id="playlist boolean">
         <legend>Playlist?</legend>
         
         <div class="fieldgroup">
             <input type="radio" name="playlist_answer" value="yes">
-            <label for= "Yes">Yes</label>
+            <label>Yes</label>
         </div>
         
         <div class="fieldgroup">
             <input type="radio" name="playlist_answer" value="no">
-            <label for= "no">No</label>
+            <label>No</label>
         </div>
     </fieldset>
 
-    <button id="dl" class="button" title="download video/audio" type="button"> <b>&dArr;</b> </button>
+    <p> <button id="b" type="button" class="button" title="download video/audio" type="button"> <b>&dArr;</b> </button> </p>
 
     <p id="output"> Here is some output</p>
 </div>
 
 </body>
 
-<script>
-src = "web_ui.js"
-</script>
+<script type="text/javascript" src = "./web_ui.js"></script>
 
 </html>
