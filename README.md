@@ -6,7 +6,7 @@ I like the idea of cross platform apps using web-languages inspired UI and and
 another language in the back not just JavaScript. The idea here is building 
 for my mvp a simple UI in HTML5, CSS, JavaScript to extend the command line
 interface of the youtube-dl open source project. It should be noted this will
-be done only for personal use, and I condone any mass downloads to redistribution! 
+be done only for personal use, and I do not condone any mass downloads of videos/music to redistribution! 
 (i.e. by using this to download songs which you then share with friends. This
 is strictly for personal use!!)
 
