@@ -2,7 +2,7 @@
 
 //Assign functions to buttons
 // console.log("ok");
-document.getElementById("b").onclick = download;
+document.getElementById("b").onclick = call_python;
 // <?php echo add(1,2);?> , https://stackoverflow.com/questions/3345457/how-to-put-php-inside-javascript#3345487
 
 function download(){
@@ -14,12 +14,13 @@ function download(){
     var pl_answ = radio_check(playlist_answers);
     var dl_mthd = radio_check(download_methods);
     // document.getElementById("output").innerHTML = pl_answ;
-    var command = "python3 mpX.py "+link + " " + pl_answ;
+    // var command = "python3 mpX.py "+link + " " + pl_answ;
+    // var output = call_python();
 
-    var run_python = "<?php $command = escapeshellcmd(ls); $output = shell_exec($command); echo $output;?>";
-    alert(run_python);
-    var output = call_python();
-    alert("Call Python");
+    // var run_python = "<?php $command = escapeshellcmd(ls); $output = shell_exec($command); echo $output;?>";
+    // alert(run_python);
+    // var output = call_python();
+    // alert("Call Python");
 }
 
 function radio_check(radios){
@@ -46,6 +47,6 @@ function call_python(){
       this.responseText;
     }
   };
-  xhttp.open("POST", "mpX.py", true);
+  xhttp.open("GET", "web_ui.php/?q=2", true);
   xhttp.send();
 }
