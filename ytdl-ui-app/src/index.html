@@ -2,11 +2,20 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Hello World!</title>
-    <link rel="stylesheet" href="index.css">
+    <title>UI</title>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css"
+  />
+    <link rel="stylesheet" href="index.css" />
+    <script defer src="render.js"></script> <!--defer so it loads after html elements-->
   </head>
   <body>
-    <h1>💖 Hello World!</h1>
-    <p>Welcome to your Electron application.</p>
+
+    <input id="search_box" type="text" />
+    
+    <button class="button is-primary" id="download"> Download </button>
+
+    <p id="output" class="is-text"> Test </p>
   </body>
 </html>
