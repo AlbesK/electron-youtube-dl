@@ -1,10 +1,15 @@
-// Buttons
-const downloadYoutubeVideo = document.getElementById("download");
-const output = document.getElementById("output");
+/* Client Side */
+const {ipcRenderer} = require('electron');
 
-// Assign Functions
-downloadYoutubeVideo.onclick = getVideoAudio;
+window.addEventListener('DOMContentLoaded', (event) => {
+    console.log('DOM fully loaded and parsed');
+});
 
-async function getVideoAudio(){
-    output.innerHTML = "Its working! (for now...)";
-}
+var button = document.getElementById('download');
+
+
+button.onclick = my_function;
+
+function my_function(){
+    ipcRenderer.send('open-error-dialog');
+};

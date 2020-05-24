@@ -2,19 +2,40 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>UI</title>
-    <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css"
-  />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'">
+    <title>Youtube DL</title>
     <link rel="stylesheet" href="index.css" />
     <script defer src="render.js"></script> <!--defer so it loads after html elements-->
   </head>
   <body>
 
-    <input id="search_box" type="text" />
-    
-    <button class="button is-primary" id="download"> Download </button>
+    <div class="columns is-vcentered">
+      <div class="column">
+        <input id="search_box" class="input is-primary" type="text" placeholder="i.e https://www.youtube.com/watch?v=3GwjfUFyY6M " />
+
+      </div>
+
+      <div class="column">
+
+        <div class="control">
+          <legend>Download Methods</legend>
+          <input type="radio" name="download_method" value="mp4">
+              <label>mp4</label>
+        
+        
+          <input type="radio" name="download_method" value="mp3">
+              <label>mp3</label>
+        </div>
+
+      </div>
+      
+      <div class="column">
+        <button class="button is-primary" id="download"> Download </button>
+  
+      </div>
+      
+    </div>  
+
 
     <p id="output" class="is-text"> Test </p>
   </body>
