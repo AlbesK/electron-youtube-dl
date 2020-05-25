@@ -1,10 +1,10 @@
 # from __future__ import unicode_literals #import stuff
 # import youtube_dl #import youtube_dl, be sure to update twice a year..
-# import sys
+import sys
 # print(sys.argv) # to scan terminal
 
 print("Hello World!")
-# sys.stdout.flush()
+sys.stdout.flush() # to return data
 
 # class MyLogger(object): # Comment out if not needed. Also comment out the lower part in options.
 #     """Logger for keeping track of errors."""

@@ -3,7 +3,8 @@ const path = require('path');
 
 /* My imports */
 const {ipcMain} = require('electron');
-const {dialog} = require('electron');
+const {dialog} = require('electron'); // testing alerts through renderer and main
+const spawn = require('child_process').spawn;
 
 // Handle creating/removing shortcuts on Windows when installing/uninstalling.
 if (require('electron-squirrel-startup')) { // eslint-disable-line global-require
@@ -51,10 +52,24 @@ app.on('activate', () => {
 
 // In this file you can include the rest of your app's specific main process
 // code. You can also put them in separate files and import them here.
+
 /* Between here to use more apis for sure */
 
-ipcMain.on('open-error-dialog', function(event){
-  dialog.showErrorBox('An error message', 'Demo of an error message');
+// receive message from renderer and call python here
+ipcMain.on('run-python', function(event){
+  // dialog.showErrorBox('An error message', 'Demo of an error message');
+  console.log("Main: getting call to run python...");
+  const pythonProcess = spawn('python3', ['../mpX.py']);
+  pythonProcess.stdout.on('data', (data) => {
+    // Do something with the data returned from python script
+    console.log(`stdout: ${data}`);
+  });
+  pythonProcess.stderr.on('data', (data) => {
+    // Do something with the data returned from python script
+    console.log(`stderr:${data}`);
+  });
 });
+
+
 
 /* Between here to use more apis for sure */
