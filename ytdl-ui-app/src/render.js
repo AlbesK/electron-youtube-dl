@@ -22,12 +22,12 @@ function check_radio_buttons(name_radio){
 
 function my_function(){
   // Elements needed from HTML index file
-  // var link = document.getElementById('search_box').value;
-  // var radios = document.getElementsByName('download_method');
-  // var download_method_answer = check_radio_buttons(radios);
-  // console.log(link);
-  // console.log(download_method_answer);
-  ipcRenderer.send('run-python');
+  var link = document.getElementById('search_box').value;
+  var radios = document.getElementsByName('download_method');
+  var download_method_answer = check_radio_buttons(radios);
+  console.log(link);
+  console.log(download_method_answer);
+  ipcRenderer.send('run-python', [link, download_method_answer]);
 };
 
 

@@ -56,18 +56,23 @@ app.on('activate', () => {
 /* Between here to use more apis for sure */
 
 // receive message from renderer and call python here
-ipcMain.on('run-python', function(event){
+ipcMain.on('run-python', function(event, args){
   // dialog.showErrorBox('An error message', 'Demo of an error message');
   console.log("Main: getting call to run python...");
-  const pythonProcess = spawn('python3', ['./src/mpX.py']);
+  const pythonProcess = spawn('python3', ['./src/mpX.py', args[0], args[1]]);
+  
   pythonProcess.stdout.on('data', (data) => {
     // Do something with the data returned from python script
     console.log(`stdout: ${data}`);
   });
+
   pythonProcess.stderr.on('data', (data) => {
-    // Do something with the data returned from python script
+    // Do something with the error returned from python script
     console.log(`stderr:${data}`);
   });
+
+  console.log(args);
+
 });
 
 
