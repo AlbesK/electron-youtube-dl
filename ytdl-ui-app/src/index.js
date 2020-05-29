@@ -1,9 +1,11 @@
+/* Main / Backend loop of app */
+
 const { app, BrowserWindow } = require('electron');
 const path = require('path');
 
 /* My imports */
 const {ipcMain} = require('electron');
-const {dialog} = require('electron'); // testing alerts through renderer and main
+// const {dialog} = require('electron'); // testing alerts through renderer and main
 const spawn = require('child_process').spawn;
 
 // Handle creating/removing shortcuts on Windows when installing/uninstalling.
@@ -57,21 +59,23 @@ app.on('activate', () => {
 
 // receive message from renderer and call python here
 ipcMain.on('run-python', function(event, args){
-  // dialog.showErrorBox('An error message', 'Demo of an error message');
-  console.log("Main: getting call to run python...");
-  const pythonProcess = spawn('python3', ['./src/mpX.py', args[0], args[1]]);
   
+  console.log("Main: getting call to run python...");
+  
+  // Call new child_process and essentially open terminal for command execution
+  // pass also command python3 and args along with it in shell
+  const pythonProcess = spawn('python3', ['./src/mpX.py', args[0], args[1], args[2]]);
+  
+  // Do something with the data returned from python script
   pythonProcess.stdout.on('data', (data) => {
-    // Do something with the data returned from python script
     console.log(`stdout: ${data}`);
+    console.log("Out of Python!")
   });
 
+  // Do something with the error returned from python script
   pythonProcess.stderr.on('data', (data) => {
-    // Do something with the error returned from python script
     console.log(`stderr:${data}`);
   });
-
-  console.log(args);
 
 });
 
