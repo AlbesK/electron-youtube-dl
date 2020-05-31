@@ -52,7 +52,7 @@ if download_method == "mp4" :
     }
     if (playlist_boolean == "Y"): # Checking if you want the full playlist
         options['noplaylist'] = False
-        options['outtmpl'] = u'%(playlist_index)s-%(title)s.%(ext)s'
+        options['outtmpl'] = SAVE_PATH + '/%(playlist_index)s-%(title)s.%(ext)s'
     
 else:
     # Options for sound/audio files
@@ -77,7 +77,7 @@ else:
 
     if (playlist_boolean == "Y"): # Checking if you want the full playlist
         options['noplaylist'] = False
-        options['outtmpl'] = u'%(playlist_index)s-%(title)s.%(ext)s'
+        options['outtmpl'] = SAVE_PATH + '/%(playlist_index)s-%(title)s.%(ext)s'
 
 # Download the song/video with youtube-dl
 with youtube_dl.YoutubeDL(options) as ydl: 
