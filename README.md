@@ -1,4 +1,4 @@
-# simple-ytdl-ui
+# electron-youtube-dl
 A simple UI build with Electron and node.js to use youtube-dl to download videos/music.
 
 # How to use:
