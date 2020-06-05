@@ -10,47 +10,54 @@
   </head>
   <body>
 
-    <div class="box is-desktop is-vcentered">
-      <div class="column">
+    <div>
+      
         <input id="search_box" class="input is-primary" type="text" placeholder="i.e https://www.youtube.com/watch?v=3GwjfUFyY6M " value="https://www.youtube.com/watch?v=3GwjfUFyY6M"/>
 
-      </div>
 
-      <div class="column">
+      <div>
+        
+        
+        <legend class="legend">Download Method:</legend>
 
-        <div class="control">
-          <legend>Download Method:</legend>
+        <label class="container">Video
           <input type="radio" name="download_method" value="mp4">
-              <label>mp4</label>
-        
-          <input type="radio" name="download_method" value="mp3">
-              <label>mp3</label>
-        </div>
+          <span class="checkmark"></span>
+        </label>
 
+        <label class="container">Audio
+          <input type="radio" name="download_method" value="mp3">
+          <span class="checkmark"></span>
+        </label>
+      
       </div>
 
-      <div class="column">
+      <div>
 
-        <div class="control">
-          <legend>Playlist/Album?</legend>
-          <input type="radio" name="playlist_boolean" value="Y">
-              <label>Yes</label>
         
-        
-          <input type="radio" name="playlist_boolean" value="n">
-              <label>No</label>
-        </div>
+        <legend class="legend">Playlist/Album?</legend>
+
+        <label class="container">Yes
+          <input type="radio" name="playlist_boolean">
+          <span class="checkmark"></span>
+        </label>
+
+        <label class="container">No
+          <input type="radio" name="playlist_boolean">
+          <span class="checkmark"></span>
+        </label>
+    
+
 
       </div>
       
-      <div class="column">
-        <button class="button is-primary" id="dl"> Download </button>
+      <div>
+        <button class="button" id="dl"> Download </button>
   
       </div>
 
-      <div class="column">
-        <p id="myPar"> Output </p>
-      </div>
+      
+      <p id="myPar" class="out"> Output </p>
       
     </div>  
 

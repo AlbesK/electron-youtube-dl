@@ -16,8 +16,8 @@ if (require('electron-squirrel-startup')) { // eslint-disable-line global-requir
 const createWindow = () => {
   // Create the browser window.
   const mainWindow = new BrowserWindow({
-    width: 600,
-    height: 400,
+    width: 800,
+    height: 600,
     webPreferences: { 
       nodeIntegration: true 
     },
@@ -80,7 +80,5 @@ ipcMain.on('run-python', function(event, args){
   });
   
 });
-
-
 
 /* Between here to use more apis for sure */
