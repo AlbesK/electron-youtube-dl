@@ -2,7 +2,12 @@
 A simple UI build with Electron and node.js to use youtube-dl to download videos/music.
 
 # How to use:
-## Clone/Donwload the repo and then for Linux or any form of terminal run: npm start
+## Clone/Donwload the repo and then for Linux or any form of terminal run: 
+
+<ul>
+  <li>npm install (for dependencies)</li>
+  <li>npm start</li>
+</ul> 
 
 <figure>
   <img src="https://github.com/AlbesK/simple-ytdl-ui/blob/master/images/starting_ui.png" alt="Electron UI For Youtube-DL" style="width:50%">
