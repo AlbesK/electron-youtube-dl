@@ -39,9 +39,11 @@ You need to have:
   <li>youtube-dl (python3) - Update once in a while as well.</li>
   <li>node.js</li>
   <li>electron</li>
-</ul> 
+</ul>  
 
-This was tested on Ubuntu 18.04. It already has electron packager and can be used directly, but the icon/logo is still not resolved for now. 
+# Release builds
+
+This was tested on Ubuntu 18.04. It already has electron packager and can be used directly to make builds through 'npm run package-os' where os is linux, win, or mac. But the icon/logo is still not resolved for now.
 
 Will update when I feel I want new features, or to automate more processes, and lastly, of course feel free to fork it and play yourself! I learned a lot building this app, from main/render calls through ipc, security policy calling python to simple string formatting in javascript. 
 
