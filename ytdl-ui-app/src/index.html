@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'">
+    <title>Youtube DL</title>
+    <link rel="stylesheet" href="index.css" />
+    <!-- <link rel="stylesheet" href="../node_modules/bulma/css/bulma.css" -->
+    <script defer src="render.js"></script> <!--defer so it loads after html elements-->
+  </head>
+  <body>
+
+    <div class="box is-desktop is-vcentered">
+      <div class="column">
+        <input id="search_box" class="input is-primary" type="text" placeholder="i.e https://www.youtube.com/watch?v=3GwjfUFyY6M " value="https://www.youtube.com/watch?v=3GwjfUFyY6M"/>
+
+      </div>
+
+      <div class="column">
+
+        <div class="control">
+          <legend>Download Method:</legend>
+          <input type="radio" name="download_method" value="mp4">
+              <label>mp4</label>
+        
+          <input type="radio" name="download_method" value="mp3">
+              <label>mp3</label>
+        </div>
+
+      </div>
+
+      <div class="column">
+
+        <div class="control">
+          <legend>Playlist/Album?</legend>
+          <input type="radio" name="playlist_boolean" value="Y">
+              <label>Yes</label>
+        
+        
+          <input type="radio" name="playlist_boolean" value="n">
+              <label>No</label>
+        </div>
+
+      </div>
+      
+      <div class="column">
+        <button class="button is-primary" id="dl"> Download </button>
+  
+      </div>
+
+      <div class="column">
+        <p id="myPar"> Output </p>
+      </div>
+      
+    </div>  
+
+  </body>
+</html>
