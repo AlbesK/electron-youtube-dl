@@ -62,7 +62,7 @@ will do so only by changing the license or making clear that whoever uses this a
 
 # Github
 I have used version control before but thought it would be nice to start again  a
-project here rather than just edit the same folders. 
+project here rather than just edit the same folders and learn more through practice.
 
 # Branches
 For now I will use 2 branches. Another one called 'draft' along 'master'. 'draft' as the name states will be used on most changes I would like to explore, and then would push them to 'master' when its in working order.
