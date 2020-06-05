@@ -1,5 +1,5 @@
 # electron-youtube-dl
-A simple UI build with Electron and node.js to use youtube-dl to download videos/music.
+A simple UI build with Electron and node.js to use youtube-dl for python3 to download videos/music.
 
 # How to use:
 ## Clone/Donwload the repo and then for Linux or any form of terminal run: 
