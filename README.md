@@ -38,7 +38,6 @@ You need to have:
 <ul>
   <li>youtube-dl (python3) - Update once in a while as well.</li>
   <li>node.js</li>
-  <li>electron</li>
 </ul>  
 
 # Release builds
