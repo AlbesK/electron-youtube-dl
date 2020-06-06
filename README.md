@@ -44,7 +44,9 @@ You need to have:
 
 This was tested on Ubuntu 18.04. It already has electron packager and can be used directly to make builds through 'npm run package-os' where os is linux, win, or mac. But the icon/logo is still not resolved for now.
 
-Will update when I feel I want new features, or to automate more processes, and lastly, of course feel free to fork it and play yourself! I learned a lot building this app, from main/render calls through ipc, security policy calling python to simple string formatting in javascript. 
+Will update when I feel I want new features, or to automate more processes, and lastly, of course feel free to fork it and play yourself! 
+
+I learned a lot building this app, from main/index.js (main UI/back-end) to render.js (client) calls through ipc to communicate asynchronously from a renderer process to the main processes, security policy calling python to even simple string formatting in javascript.
 
 # Motivation
 I like the idea of cross platform apps using web-languages inspired UI and and
