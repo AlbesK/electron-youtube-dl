@@ -42,7 +42,7 @@ You need to have:
 
 # Release builds
 
-This was tested on Ubuntu 18.04. It already has electron packager and can be used directly to make builds through 'npm run package-os' where os is linux, win, or mac. But the icon/logo is still not resolved for now.
+This was tested on Ubuntu 18.04. It already has electron packager and can be used directly to make builds through 'npm run package-os' where os is linux, win, or mac (the commands are in package.json). But the icon/logo is still not resolved for now.
 
 Will update when I feel I want new features, or to automate more processes, and lastly, of course feel free to fork it and play yourself! 
 
