@@ -60,10 +60,11 @@ Will update when I feel I want new features, or to automate more processes, and 
 I learned a lot building this app, from main/index.js (main UI/back-end) to render.js (client) calls through ipc to communicate asynchronously from a renderer process to the main processes, security policy calling python to even simple string formatting in javascript.
 
 # Motivation
-I like the idea of cross platform apps using web-languages inspired UI and and
-another language in the back not just JavaScript. The idea here is building 
+I like the idea of cross platform apps using web-languages inspired UI and
+another language in the back-end not just JavaScript. The idea here is building 
 for my mvp a simple UI in HTML5, CSS, JavaScript to extend the command line
-interface of the youtube-dl open source project. 
+interface of the youtube-dl open source project. Also inspired when I found out [vs code](https://code.visualstudio.com/) is actually
+built with electron and so many more apps. 
 
 It should be noted this will be done only for personal use, and I do not condone any mass downloads of videos/music for redistribution! 
 (i.e. by using this to download songs which you then share with friends. This
