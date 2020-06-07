@@ -47,13 +47,13 @@ You will be greeted with the gui shortly after:
 You need to have the following installed already:  
 
 <ul>
-  <li>youtube-dl (for python3, through pip3) - Update once in a while as well.</li>
+  <li>youtube-dl (for <b>python3</b>, through <b>pip3</b>) - Update once in a while as well.</li>
   <li>node.js</li>
 </ul>  
 
 # Release builds
 
-This was tested on Ubuntu 18.04. It already has [electron packager](https://github.com/electron/electron-packager) and can be used directly to make builds through 'npm run package-os' where os is linux, win, or mac (the commands are in package.json). But the icon/logo is still not resolved for now.
+This was tested on Ubuntu 18.04. It already has [electron packager](https://github.com/electron/electron-packager) and can be used directly to make builds through ```npm run package-os``` where os is linux, win, or mac (the commands are in ```package.json```). <i>But</i> the icon/logo is still not resolved for now.
 
 Will update when I feel I want new features, or to automate more processes, and lastly, of course feel free to fork it and play yourself! 
 
@@ -77,4 +77,4 @@ I have used version control before but thought it would be nice to start again  
 project here rather than just edit the same folders and learn more through practice.
 
 # Branches
-For now I will use 2 branches. Another one called 'draft' along 'master'. 'draft' as the name states will be used on most changes I would like to explore, and then would push them to 'master' when its in working order.
+For now I will use 2 branches. Another one called ```draft``` along ```master```. ```draft``` as the name states will be used on most changes I would like to explore, and then would push them to 'master' when its in working order.
