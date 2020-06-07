@@ -4,7 +4,7 @@ A simple UI build with [electron](https://www.electronjs.org/apps) and [node.js]
 # How to use:
 ## Clone/Donwload the repo
 
-Then for Linux through terminal, or any form of it in other os's run inside the directoory ```electron-youtube-dl/ytdl-ui-app/```: 
+Then for Linux through terminal, or any form of it in other os's run inside the directory ```electron-youtube-dl/ytdl-ui-app/```: 
 
 ```
 npm install
