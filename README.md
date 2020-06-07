@@ -2,19 +2,30 @@
 A simple UI build with [electron](https://www.electronjs.org/apps) and [node.js](https://nodejs.org/en/) to use [youtube-dl](https://github.com/ytdl-org/youtube-dl/) for python3 to download videos/music.
 
 # How to use:
-## Clone/Donwload the repo and then for Linux or any form of terminal run: 
+## Clone/Donwload the repo
 
-<ul>
-  <li>npm install (for dependencies)</li>
-  <li>npm start</li>
-</ul> 
+Then for Linux through terminal, or any form of it in other os's run inside the directoory ```electron-youtube-dl/ytdl-ui-app/```: 
+
+```
+npm install
+```
+^ to get dependencies
+and then:
+```
+npm start
+```
+
+You will be greeted with the gui shortly after:
 
 <figure>
   <img src="https://github.com/AlbesK/simple-ytdl-ui/blob/master/images/starting_ui.png" alt="Electron UI For Youtube-DL" style="width:50%">
   <figcaption>Fig.1 Electron UI for Youtube-DL after running 'npm start'.</figcaption>
 </figure>
 
-## Put from youtube (including playlist text if needed) and check options:
+## Copy and paste link from youtube 
+
+(including playlist text if needed) and check options:
+
 <figure>
   <img src="https://github.com/AlbesK/simple-ytdl-ui/blob/master/images/mp3_input_example_2.png" alt="Electron UI For Youtube-DL" style="width:50">
   <figcaption>Fig.2 Sample output after successful link.</figcaption>
@@ -33,10 +44,10 @@ A simple UI build with [electron](https://www.electronjs.org/apps) and [node.js]
 
 # Notes:
 
-You need to have:  
+You need to have the following installed already:  
 
 <ul>
-  <li>youtube-dl (python3) - Update once in a while as well.</li>
+  <li>youtube-dl (for python3, through pip3) - Update once in a while as well.</li>
   <li>node.js</li>
 </ul>  
 
