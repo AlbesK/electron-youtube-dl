@@ -28,7 +28,7 @@ A simple UI build with Electron and node.js to use youtube-dl for python3 to dow
 
 <figure>
   <img src="https://github.com/AlbesK/simple-ytdl-ui/blob/master/images/output_2.png" alt="Electron UI For Youtube-DL" style="width:50%">
-  <figcaption>Fig.1 Sample download.</figcaption>
+  <figcaption>Fig.4 Sample download.</figcaption>
 </figure>
 
 # Notes:
@@ -59,7 +59,7 @@ It should be noted this will be done only for personal use, and I do not condone
 is strictly for personal use!!)
 
 If I make the repo public in the future to showcase web/other backened integration
-will do so only by changing the license or making clear that whoever uses this app should use him for himself and not for re-selling/resharing the downloaded content.
+will do so only by changing the license or making clear that whoever uses this app should use it for himself and not for re-selling/resharing the downloaded content.
 
 # Github
 I have used version control before but thought it would be nice to start again  a
