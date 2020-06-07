@@ -81,7 +81,7 @@ else:
 
     if (playlist_boolean == "Y"): # Checking if you want the full playlist
         options['noplaylist'] = False
-        options['outtmpl'] = directory + '%(playlist_index)s-%(title)s.%(ext)s'
+        options['outtmpl'] = directory + '/%(playlist_index)s-%(title)s.%(ext)s'
 
 # Download the song/video with youtube-dl
 with youtube_dl.YoutubeDL(options) as ydl: 
