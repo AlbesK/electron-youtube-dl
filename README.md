@@ -18,7 +18,7 @@ npm start
 You will be greeted with the gui shortly after:
 
 <figure>
-  <img src="https://github.com/AlbesK/simple-ytdl-ui/blob/master/images/starting_ui.png" alt="Electron UI For Youtube-DL" style="width:50%">
+  <img src="https://github.com/AlbesK/simple-ytdl-ui/blob/master/images/starting_ui.png" alt="Electron UI For Youtube-DL" width="60%">
   <figcaption>Fig.1 Electron UI for Youtube-DL after running 'npm start'.</figcaption>
 </figure>
 
@@ -27,18 +27,18 @@ You will be greeted with the gui shortly after:
 (including playlist text if needed) and check options:
 
 <figure>
-  <img src="https://github.com/AlbesK/simple-ytdl-ui/blob/master/images/mp3_input_example_2.png" alt="Electron UI For Youtube-DL" style="width:50">
+  <img src="https://github.com/AlbesK/simple-ytdl-ui/blob/master/images/mp3_input_example_2.png" alt="Electron UI For Youtube-DL" width="60%">
   <figcaption>Fig.2 Sample output after successful link.</figcaption>
 </figure>
 
 ## Output will be saved at local Downloads folder.
 <figure>
-  <img src="https://github.com/AlbesK/simple-ytdl-ui/blob/master/images/output_1.png" alt="Electron UI For Youtube-DL" style="width:50%">
+  <img src="https://github.com/AlbesK/simple-ytdl-ui/blob/master/images/output_1.png" alt="Electron UI For Youtube-DL" width="60%">
   <figcaption>Fig.3 Sample Output Folder.</figcaption>
 </figure>
 
 <figure>
-  <img src="https://github.com/AlbesK/simple-ytdl-ui/blob/master/images/output_2.png" alt="Electron UI For Youtube-DL" style="width:50%">
+  <img src="https://github.com/AlbesK/simple-ytdl-ui/blob/master/images/output_2.png" alt="Electron UI For Youtube-DL" width="60%">
   <figcaption>Fig.4 Sample download.</figcaption>
 </figure>
 
