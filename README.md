@@ -1,5 +1,5 @@
 # electron-youtube-dl
-A simple UI build with [electron](https://www.electronjs.org/apps) and [node.js](https://nodejs.org/en/) to use [youtube-dl](https://github.com/ytdl-org/youtube-dl/) to download videos/music.
+A simple UI built with [electron](https://www.electronjs.org/apps) and [node.js](https://nodejs.org/en/) to use [youtube-dl](https://github.com/ytdl-org/youtube-dl/) to download videos/music.
 
 # How to use:
 ## Clone/Donwload the repo
