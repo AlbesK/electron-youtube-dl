@@ -72,7 +72,7 @@ built with electron and so many more apps.
 
 It should be noted this will be done only for personal use, and I do not condone any mass downloads of videos/music for redistribution! 
 (i.e. by using this to download songs which you then share with friends. This
-is strictly for personal use!!)
+is strictly for personal use!! So only use it to download files for yourself!)
 
 If I make the repo public in the future to showcase web/other backened integration
 will do so only by changing the license or making clear that whoever uses this app should use it for himself and not for re-selling/resharing the downloaded content.
