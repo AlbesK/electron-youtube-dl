@@ -1,5 +1,5 @@
 # electron-youtube-dl
-A simple UI built with [electron](https://www.electronjs.org/apps) and [node.js](https://nodejs.org/en/) to use [youtube-dl](https://github.com/ytdl-org/youtube-dl/) to download videos/music.
+A simple UI built with [electron](https://www.electronjs.org/apps) and [node.js](https://nodejs.org/en/) to use [youtube-dl](https://github.com/ytdl-org/youtube-dl/) (for python) to download videos/music.
 
 # How to use:
 ## Clone/Donwload the repo
@@ -51,13 +51,14 @@ You need to have the following installed already:
   <li>node.js</li>
 </ul>  
 
+(might do this soon to be in a virtual environment of its own, so it gets the current youtube-dl or to automatically update it)
 # Release builds
 
 This was tested on Ubuntu 18.04. It already has [electron packager](https://github.com/electron/electron-packager) and can be used directly to make builds through: 
 ```javascript
 npm run package-os // i.e. npm run package-linux
 ``` 
-where os is linux, win, or mac (the commands are in ```package.json```). <i>But</i> the icon/logo is still not resolved for now.
+where os is linux, win, or mac (the commands are in ```package.json```). <i>But</i> the icon/logo is still not resolved for now for all builds, only for Linux.
 
 Will update when I feel I want new features, or to automate more processes, and lastly, of course feel free to fork it and play yourself! 
 
